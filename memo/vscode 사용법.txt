@@ -1,0 +1,57 @@
+crtl + F : 현재 파일에서 단어 찾기 // 마우스 클릭 후 crtl + F해도 그 기능 실행
+crtl + H : 현재 파일에서 단어 바꾸기 (오타 수정)
+crtl + F2 : 커서에 있는 단어 바로 찾기 / 그 후 변경도 가능 (변수명 바꿀 때)
+
+crtl + shift + F : 프로젝트 전체에서 단어 찾기
+
+crtl + K > F : 열려있는 폴더 닫기
+crtl + shift + N : 새 창 열기
+
+-----------------------------------------------------------------------
+"필수"
+indent-rainbow = 들여쓰기 색상으로 구분
+Korean Language Pack for Visual Studio Code = 한글로사용
+
+"선택"
+Material Icon Theme = 파일 아이콘 이쁘게
+Power Mode = 타이핑 이쁘게 ex) 펑펑, 흔들림
+Prettier - Code formatter = 코드 저장시 자동 정렬 / html, c언어, python 골고루 사용한다면 "필수"
+Error Lens = 에러를 찾아줌
+
+"html" - 외부에 따로 설치 필요 X
+HTML CSS Support
+Image preview = html/css에서 이미지 경로 위 마우스 올리면, 이미지 미리보기
+JavaScript (ES6) code snippets = 자바스크립트
+Live Server = html 실시간 실행 서버
+
+"python" - 외부에 따로 설치 필요 O
+python = 4개가 딸려서 설치됨 // Pylance, Python, Python Debugger, Python Environments
+black formatter = 파이썬 전용 코드 정렬 // 파이썬만 사용한다고 설정해줘야 함
+isort = import 자동 정렬 // black formatter과 사용시 충돌발생 가능많음 // 백준만할꺼면 설치X
+
+"Git" - 외부에 따로 설치 필요 O
+GitLens — Git supercharged = 누가, 언제, 뭘 수정했는지 바로 표시
+Git Graph = 커밋 그래프 시각화
+-----------------------------------------------------------------------
+%설정 찾는 법%
+1. vs켜기
+2. crtl + ,
+3. 오른쪽 위 "설정 열기" 클릭
+4. 26.01.16 기준 (파이썬만 사용중)
+{
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "workbench.iconTheme": "material-icon-theme",
+
+  "window.zoomLevel": 1,
+  "workbench.editor.enablePreview": false,
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+}
+
+이와 같은지 확인
