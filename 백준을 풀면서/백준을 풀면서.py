@@ -485,3 +485,16 @@ for _ in range(T):
 
     print(dp[n])
 # endregion
+# region 10815 숫자카드 (실5) / list대신 set을 사용해 시간 단축
+N = int(input())
+a = set(map(int, input().split()))
+
+M = int(input())
+b = list(map(int, input().split()))
+
+for i in b:
+    if i in a:
+        print(1, end=" ")
+    else:
+        print(0, end=" ")
+# endregion
