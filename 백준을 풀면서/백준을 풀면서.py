@@ -498,3 +498,15 @@ for i in b:
     else:
         print(0, end=" ")
 # endregion
+# region 1934 최소공배구(브1) // math 모듈에 lcm함수 사용, math.gcd(a, b)는 최소공약수 함수
+import math
+
+T = int(input())
+
+for _ in range(T):
+    a = []
+    b = []
+
+    A, B = map(int, input().split())
+    print(math.lcm(A, B))
+# endregion
